@@ -1,12 +1,10 @@
 import { Earthling } from './../src/earthling';
 
 describe('Earthling', function() {
-  let birthdate = new Birthdate("1981", "11", "14")
-  let myEarthling = new Earthling(birthdate);
+  let myEarthling = new Earthling(new Date('Nov, 14, 1981'));
 
-  it('should calculate age by subtracting input birthay from current date', function() {
-    myEarthling.calcAge();
-    expect(myEarthling.birthdate).notToEqual('');
-    expect(myEarthling.calcAge).toBeLessThan(37);
+  // check to make sure the result is a number
+  it('should return age in seconds as a number', function() {
+    expect(typeof myEarthling.ageInSeconds()).toEqual('number');
   });
 });
