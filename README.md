@@ -9,26 +9,51 @@ _A solar year lasts 365 days on planet Earth. However, the length of a solar yea
 
 ### Specs
 
-Take a person’s age in years and convert it into seconds.
+The application will take in a person's date of birth.
+* Input: Birth Date: Year/Month/Day
+* Output: Birth Date: "1981", "11", "14"
 
-Take two dates and determine the difference, in seconds, between the two.
+The application will determine the user’s life expectancy, by asking for users life expectancy.
+* Input: ["What is the average life expectancy of someone of your demographic?"] "85"
+* Output: "85"
 
-Return the age of a human in Mercury years. (A Mercury year is .24 Earth years.)
+The application will take a person's date of birth and compare it to the current day, determining difference in seconds.
+* Input: Birth Date: "1981", "11", "14"
+* Output: Today you are x seconds old
 
-Return the age of a human in Venus years. (A Venus year is .62 Earth years.)
+The application will take the users expected life expectancy and return it in seconds.
+* Input: "85"
+* Output: x seconds
 
-Return the age of a human in Mars years. (A Mars year is 1.88 Earth years.)
+The application will take a person's age and return it in Mercury years.
+* Input: 36 earth years
+* Output: You would be (A Mercury year is .24 Earth years.) on Mercury
 
-Return the age of a human in Jupiter years. (A Jupiter year is 11.86 Earth years.)
+The application will take a person's age and return it in Venus years.
+* Input: 36 earth years
+* Output: You would be (A Venus year is .62 Earth years.) on Venus
 
-Determine how many years a user has left to live on each planet. :skull:
+The application will take a person's age and return it in Mars years.
+* Input: 36 earth years
+* Output: You would be (A Mars year is 1.88 Earth years.) on Mars
 
-The application will calculate the user’s life expectancy. User inputs the average life expectancy for their demographic.
+The application will take a person's age and return it in Jupiter years.
+* Input: 36 earth years
+* Output: You would be (A Jupiter year is 11.86 Earth years.) on Jupiter
 
-If a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy.
+The application will determine how many years a user has left to live on each planet, depending on their input life expectancy. :skull:
+* Input: "85"
+* Output: You have x years to live on Venus
+
+The application will determine how many years a user has lived past their life expectancy on each planet, depending on their input life expectancy. :skull:
+* Input: "85"
+* Output: You have lived x years past your life expectancy on Jupiter
+
+
 
 ## Setup/Installation Requirements
 
+_Clone files from this repository. Run npm install._
 
 
 ## Known Bugs
