@@ -7,6 +7,11 @@
 ## Description
 _A solar year lasts 365 days on planet Earth. However, the length of a solar year varies from planet to planet. For instance, a solar year on Mercury lasts 88 days. This an application that determines a user’s age based on a planet’s solar years._ :rocket:
 
+## Planning
+
+### Configuration and Dependencies
+_This app was built using clean webpack plugin, eslint, Jasmine, and Karma. With the help of style-loader and uglify._
+
 ### Specs
 
 The application will take in a person's date of birth.
@@ -49,7 +54,9 @@ The application will determine how many years a user has lived past their life e
 * Input: "85"
 * Output: You have lived x years past your life expectancy on Jupiter
 
+### UX/UI
 
+None at this time
 
 ## Setup/Installation Requirements
 
@@ -62,7 +69,7 @@ _There are no known bugs at this time_ :space_invader:
 
 ## Support and contact details
 
-_Happily awaiting your thoughts on Twitter @dawnrparty_:hatched_chick:
+_Happily awaiting your thoughts on Twitter_ :hatched_chick: @dawnrparty
 
 ## Technologies Used
 
