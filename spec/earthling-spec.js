@@ -1,7 +1,7 @@
-import { Earthling } from './../js/earthling';
+import { Earthling } from './../src/earthling';
 
 describe('Earthling', function() {
-  const birthdate = new Birthdate("1981", "11", "14")
+  let birthdate = new Birthdate("1981", "11", "14")
   let myEarthling = new Earthling(birthdate);
 
   it('should calculate age by subtracting input birthay from current date', function() {
