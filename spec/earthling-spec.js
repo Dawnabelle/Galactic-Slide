@@ -27,6 +27,10 @@ describe('Earthling', function() {
 
   it('should return age in Mars years', function(){
     expect(myEarthling.ageInMarsYears()).toBeLessThan(37 * 1.88);
-    console.log(myEarthling.ageInMarsYears());
+  });
+
+  it('should return age in Jupiter years', function(){
+    expect(myEarthling.ageInJupiterYears()).toBeLessThan(37 * 11.86);
+    console.log(myEarthling.ageInJupiterYears());
   });
 });
