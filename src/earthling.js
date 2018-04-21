@@ -29,6 +29,11 @@ class Earthling {
     // let yearsOnEarth = (yearsInDays / 365);
     return yearsOnEarth;
   }
+
+  // Return the age of a person in Mercury years
+  ageInMercuryYears(){
+  return this.ageInEarthYears() * .24;
+  }
 }
 
 export { Earthling };
