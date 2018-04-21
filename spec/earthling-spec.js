@@ -42,8 +42,9 @@ describe('Earthling', function() {
     expect(Math.ceil(yearsLeft)).toEqual(63);
   });
 
-  it('should return the difference between ', function(){
-    console.log(myEarthling.yearsPastExpectancy());
+  it('should return number of years past life expectancy', function(){
+    let yearsLeft = myEarthling.yearsLeftToLive('jupiter');
+    expect(yearsLeft).toBeLessThan(0);
   });
 
 });

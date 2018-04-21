@@ -69,11 +69,13 @@ class Earthling {
   // Return how many years past a given life expectancy
   // a user has lived
   yearsPastExpectancy(yearsLeft){
+    let result;
     if (yearsLeft < 0) {
     result = Math.abs(yearsLeft);
     } else {
     result = 0;
     }
+    return result;
   }
 
 }
