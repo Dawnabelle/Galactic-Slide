@@ -50,6 +50,22 @@ class Earthling {
   ageInJupiterYears(){
     return this.ageInEarthYears() * 11.86;
   }
+
+  yearsLeftToLive(planet){
+    let ageOnPlanet;
+    if (planet === 'mercury') {
+      ageOnPlanet = this.ageInMercuryYears();
+    } else if (planet === 'venus') {
+      ageOnPlanet = this.ageInVenusYears();
+    } else if (planet === 'mars') {
+      ageOnPlanet = this.ageInMarsYears();
+    } else if (planet === 'jupiter') {
+      ageOnPlanet = this. ageInJupiterYears();
+    }
+
+    return (this.lifeExpectancy - ageOnPlanet);
+  }
+
 }
 
 export { Earthling };

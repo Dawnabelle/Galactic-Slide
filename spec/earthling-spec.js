@@ -1,7 +1,7 @@
 import  { Earthling } from './../src/earthling';
 
 describe('Earthling', function() {
-  let myEarthling = new Earthling(new Date('Nov, 14, 1981'), 107  );
+  let myEarthling = new Earthling(new Date('Nov, 14, 1981'), 85 );
 
   it('should return age in seconds as a number', function() {
     expect(typeof myEarthling.ageInSeconds()).toEqual('number');
@@ -31,4 +31,16 @@ describe('Earthling', function() {
   it('should return age in Jupiter years', function(){
     expect(myEarthling.ageInJupiterYears()).toBeLessThan(37 * 11.86);
   });
+
+  it('should return amount of life left to live on Mercury, based on life expectancy', function(){
+    let yearsLeft = myEarthling.yearsLeftToLive('mercury');
+    expect(Math.ceil(yearsLeft)).toEqual(77);
+  });
+
+  it('should return amount of life left to live on Venus, based on life expectancy', function(){
+    console.log(myEarthling.yearsLeftToLive('venus'));
+    let yearsLeft = myEarthling.yearsLeftToLive('venus');
+    expect(Math.ceil(yearsLeft)).toEqual(63);
+  });
+
 });
