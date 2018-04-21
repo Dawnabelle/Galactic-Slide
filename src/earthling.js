@@ -19,6 +19,16 @@ class Earthling {
     let date2InSeconds = date2.getTime() / 1000;
     return Math.round(Math.abs(date1InSeconds - date2InSeconds));
   }
+
+  ageInEarthYears(){
+    let yearsInSeconds = this.ageInSeconds();
+    let yearsOnEarth = (yearsInSeconds / 31536000);
+    // let yearsInMinutes = (yearsInSeconds / 60);
+    // let yearsInHours = (yearsInMinutes / 60);
+    // let yearsInDays = (yearsInHours / 24);
+    // let yearsOnEarth = (yearsInDays / 365);
+    return yearsOnEarth;
+  }
 }
 
 export { Earthling };

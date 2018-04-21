@@ -14,5 +14,10 @@ describe('Earthling', function() {
     console.log(myEarthling.betweenDatesInSeconds(new Date('Nov, 14, 1981'), new Date('Apr, 20, 2018')));
 
     expect(myEarthling.betweenDatesInSeconds(new Date('Nov, 14, 1981'), new Date('Apr, 20, 2018'))).toEqual(timePassed);
-  })
+  });
+
+  it ('should return age in Earth years', function(){
+    expect(myEarthling.ageInEarthYears()).toBeLessThan(37);
+    console.log(myEarthling.ageInEarthYears());
+  });
 });
