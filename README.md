@@ -18,10 +18,6 @@ The application will take in a person's date of birth.
 * Input: Birth Date: Year/Month/Day
 * Output: Birth Date: "1981", "11", "14"
 
-The application will determine the user’s life expectancy, by asking for users life expectancy.
-* Input: ["What is the average life expectancy of someone of your demographic?"] "85"
-* Output: "85"
-
 The application will take a person's date of birth and compare it to the current day, determining difference in seconds.
 * Input: Birth Date: "1981", "11", "14"
 * Output: Today you are x seconds old
@@ -46,6 +42,10 @@ The application will take a person's age and return it in Jupiter years.
 * Input: 36 earth years
 * Output: You would be (A Jupiter year is 11.86 Earth years.) on Jupiter
 
+The application will determine the user’s life expectancy, by asking for users life expectancy.
+* Input: ["What is the average life expectancy of someone of your demographic?"] "85"
+* Output: "85"
+
 The application will determine how many years a user has left to live on each planet, depending on their input life expectancy. :skull:
 * Input: "85"
 * Output: You have x years to live on Venus
@@ -60,7 +60,7 @@ None at this time
 
 ## Setup/Installation Requirements
 
-_Clone files from this repository. Run npm install._
+_Clone files from this repository. Run npm install. Run npm test to run tests._
 
 
 ## Known Bugs
