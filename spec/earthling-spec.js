@@ -19,11 +19,14 @@ describe('Earthling', function() {
 
   it('should return age in Mercury years', function(){
     expect(myEarthling.ageInMercuryYears()).toBeLessThan(37 * .24);
-    console.log(myEarthling.ageInMercuryYears());
   });
 
   it('should return age in Venus years', function(){
     expect(myEarthling.ageInVenusYears()).toBeLessThan(37 * .62);
-    console.log(myEarthling.ageInVenusYears());
+  });
+
+  it('should return age in Mars years', function(){
+    expect(myEarthling.ageInMarsYears()).toBeLessThan(37 * 1.88);
+    console.log(myEarthling.ageInMarsYears());
   });
 });

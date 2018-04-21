@@ -39,6 +39,11 @@ class Earthling {
   ageInVenusYears(){
     return this.ageInEarthYears() * .62;
   }
+
+  // Return the age of a person in Venus years
+  ageInMarsYears(){
+    return this.ageInEarthYears() * 1.88;
+  }
 }
 
 export { Earthling };
