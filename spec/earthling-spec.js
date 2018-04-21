@@ -38,9 +38,12 @@ describe('Earthling', function() {
   });
 
   it('should return amount of life left to live on Venus, based on life expectancy', function(){
-    console.log(myEarthling.yearsLeftToLive('venus'));
     let yearsLeft = myEarthling.yearsLeftToLive('venus');
     expect(Math.ceil(yearsLeft)).toEqual(63);
+  });
+
+  it('should return the difference between ', function(){
+    console.log(myEarthling.yearsPastExpectancy());
   });
 
 });

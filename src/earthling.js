@@ -66,6 +66,16 @@ class Earthling {
     return (this.lifeExpectancy - ageOnPlanet);
   }
 
+  // Return how many years past a given life expectancy
+  // a user has lived
+  yearsPastExpectancy(yearsLeft){
+    if (yearsLeft < 0) {
+    result = Math.abs(yearsLeft);
+    } else {
+    result = 0;
+    }
+  }
+
 }
 
 export { Earthling };
