@@ -1,7 +1,8 @@
 class Earthling {
 // creates birthdate constructor
-  constructor(birthdate){
+  constructor(birthdate, lifeExpectancy){
     this.birthdate = birthdate;
+    this.lifeExpectancy = lifeExpectancy;
   }
 
 // calculates age in seconds

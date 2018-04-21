@@ -1,9 +1,8 @@
 import  { Earthling } from './../src/earthling';
 
 describe('Earthling', function() {
-  let myEarthling = new Earthling(new Date('Nov, 14, 1981'));
+  let myEarthling = new Earthling(new Date('Nov, 14, 1981'), 107  );
 
-  // check to make sure the result is a number
   it('should return age in seconds as a number', function() {
     expect(typeof myEarthling.ageInSeconds()).toEqual('number');
   });
@@ -31,6 +30,5 @@ describe('Earthling', function() {
 
   it('should return age in Jupiter years', function(){
     expect(myEarthling.ageInJupiterYears()).toBeLessThan(37 * 11.86);
-    console.log(myEarthling.ageInJupiterYears());
   });
 });
