@@ -21,4 +21,9 @@ describe('Earthling', function() {
     expect(myEarthling.ageInMercuryYears()).toBeLessThan(37 * .24);
     console.log(myEarthling.ageInMercuryYears());
   });
+
+  it('should return age in Venus years', function(){
+    expect(myEarthling.ageInVenusYears()).toBeLessThan(37 * .62);
+    console.log(myEarthling.ageInVenusYears());
+  });
 });

@@ -32,7 +32,12 @@ class Earthling {
 
   // Return the age of a person in Mercury years
   ageInMercuryYears(){
-  return this.ageInEarthYears() * .24;
+    return this.ageInEarthYears() * .24;
+  }
+
+  // Return the age of a person in Mars years
+  ageInVenusYears(){
+    return this.ageInEarthYears() * .62;
   }
 }
 
